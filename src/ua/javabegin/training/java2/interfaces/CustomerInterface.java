@@ -1,9 +1,9 @@
 package ua.javabegin.training.java2.interfaces;
 
 public interface CustomerInterface {
-    void giveMoney();
+    void buy(GoodsInterface goods);
 
-    void getGoods();
+    void returnGoods(GoodsInterface goods);
 
-    Double getMoneyAmount();
+    String getName();
 }
