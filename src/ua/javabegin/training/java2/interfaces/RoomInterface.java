@@ -5,5 +5,4 @@ public interface RoomInterface {
 
     double getVolume(double height, double square);
 
-    double getVolume(double radius);
 }

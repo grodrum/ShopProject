@@ -4,25 +4,36 @@ import ua.javabegin.training.java2.interfaces.DepartmentInterface;
 import ua.javabegin.training.java2.interfaces.EmployeeInterface;
 
 public abstract class BaseEmployee implements EmployeeInterface {
+    private String name;
+    private int age;
+    private String sex;
+    private boolean workStatus;
+
+    public BaseEmployee(String name, int age, String sex, boolean workStatus) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.workStatus = workStatus;
+    }
 
     @Override
     public boolean isAtWork() {
-        return false;
+        return this.workStatus;
     }
 
     @Override
     public String getName() {
-        return null;
+        return this.name;
     }
 
     @Override
     public int getAge() {
-        return 0;
+        return this.age;
     }
 
     @Override
     public String getSex() {
-        return null;
+        return this.sex;
     }
 
     @Override
