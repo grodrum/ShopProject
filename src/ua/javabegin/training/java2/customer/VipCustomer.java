@@ -4,8 +4,8 @@ import ua.javabegin.training.java2.interfaces.GoodsInterface;
 
 public class VipCustomer extends BaseCustomer {
 
-    public VipCustomer(String name) {
-        super(name);
+    public VipCustomer(String name, double moneyAmount) {
+        super(name, moneyAmount);
     }
 
     @Override

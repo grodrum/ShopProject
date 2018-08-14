@@ -4,8 +4,8 @@ import ua.javabegin.training.java2.interfaces.GoodsInterface;
 
 public class CommonCustomer extends BaseCustomer {
 
-    public CommonCustomer(String name) {
-        super(name);
+    public CommonCustomer(String name, double moneyAmount) {
+        super(name, moneyAmount);
     }
 
     @Override

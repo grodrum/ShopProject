@@ -4,8 +4,8 @@ import ua.javabegin.training.java2.interfaces.GoodsInterface;
 
 public class WrongCustomer extends BaseCustomer {
 
-    public WrongCustomer(String name) {
-        super(name);
+    public WrongCustomer(String name, double moneyAmount) {
+        super(name, moneyAmount);
     }
 
     @Override
