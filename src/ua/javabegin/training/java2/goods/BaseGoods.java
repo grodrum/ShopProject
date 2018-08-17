@@ -12,25 +12,36 @@ public abstract class BaseGoods implements GoodsInterface {
     private BaseDepartment department;
     private String company;
 
+    public BaseGoods() {
+    }
+
+    public BaseGoods(double price, boolean hasGarantee, String name, BaseDepartment department, String company) {
+        this.price = price;
+        this.hasGarantee = hasGarantee;
+        this.name = name;
+        this.department = department;
+        this.company = company;
+    }
+
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public double getPrice() {
-        return 0;
+        return price;
     }
 
     @Override
     public DepartmentInterface getDepartment() {
-        return null;
+        return department;
     }
 
 
     @Override
     public boolean hasGarentee() {
-        return false;
+        return hasGarantee;
     }
 
 

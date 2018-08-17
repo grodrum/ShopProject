@@ -1,5 +1,6 @@
 package ua.javabegin.training.java2.customer;
 
+import ua.javabegin.training.java2.goods.BaseGoods;
 import ua.javabegin.training.java2.interfaces.GoodsInterface;
 
 public class CommonCustomer extends BaseCustomer {
@@ -10,6 +11,7 @@ public class CommonCustomer extends BaseCustomer {
 
     @Override
     public void buy(GoodsInterface goods) {
+        System.out.println(super.getName() + " buys " + ((BaseGoods) goods).getName());
 
     }
 
@@ -20,6 +22,6 @@ public class CommonCustomer extends BaseCustomer {
 
     @Override
     public String getName() {
-        return null;
+        return super.getName();
     }
 }

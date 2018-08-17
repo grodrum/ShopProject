@@ -3,7 +3,7 @@ package ua.javabegin.training.java2.customer;
 import ua.javabegin.training.java2.interfaces.CustomerInterface;
 import ua.javabegin.training.java2.interfaces.GoodsInterface;
 
-abstract class BaseCustomer implements CustomerInterface {
+public abstract class BaseCustomer implements CustomerInterface {
     private String name;
     private double moneyAmount;
 
@@ -14,7 +14,7 @@ abstract class BaseCustomer implements CustomerInterface {
 
     @Override
     public void buy(GoodsInterface goods) {
-        System.out.println("Customer buys " + goods);
+        System.out.println("Customer buys " + goods.getName());
     }
 
     @Override
